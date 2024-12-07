@@ -1,0 +1,41 @@
+/* PendingDoctorPage.css */
+.employment-contract {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .section {
+    margin-top: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .accept-button,
+  .reject-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .accept-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .reject-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Add more styles as needed */
+  

@@ -1,0 +1,23 @@
+/* Medicine.css */
+
+.medicine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .medicine-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .medicine-card.selected {
+    border-color: blue;
+  }
+  
+  .medicine-card img {
+    width: 100%;
+    height: auto;
+  }

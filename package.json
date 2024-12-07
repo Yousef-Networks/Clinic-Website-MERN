@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "nodemailer": "^6.9.7",
+    "validator": "^13.11.0"
+  }
+}

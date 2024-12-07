@@ -1,0 +1,633 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #14967f;
+  --error: #095d7e;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #095d7e;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  .nav {
+    .nav-link {
+      color: #333;
+      &:hover {
+        color: #007bff;
+      }
+      &.active {
+        color: #007bff;
+        background-color: #f5f5f5;
+      }
+    }
+  }
+
+  .tab-content {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.right-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+header .left-container h1{
+ color: #fff;
+ text-align: left;
+ 
+}
+header .right-container h3{
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 0px;
+ }
+ .right-container div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+ header .right-container button {
+  background: transparent;
+  font-size: 15px;
+  color: white;
+  border: 1px solid white;
+  margin-left: 10px;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0px;
+  color: #343a40;
+}
+
+header nav div button:hover {
+  background-color: #495057;
+}
+/* auth forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+
+.prescriptions {
+  flex: 2;
+}
+
+.prescriptions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.prescriptions li {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: block;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.modalContainer .title {
+  margin: bottom 20px;
+}
+
+.modalContainer .title h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom:0;
+}
+
+.modalContainer .metadata {
+  display:block;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 0.7rem;
+  line-height: 0.7;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.titleCloseBtn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.titleCloseBtn button:hover {
+  background-color: transparent;
+
+}
+
+.modalContainer .body {
+  flex: 70%;
+  flex-direction: column;
+  font-size: 1.0rem;
+  text-align: center;
+  margin-top:10px;
+  Text-align:left;
+  line-height: 0.7;
+ 
+}
+
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+.medicine-table {
+  width: 100%; /* reduce width to 90% to create margins */
+  margin: auto; /* center the table */
+}
+
+.medicine-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.medicine-table th, .medicine-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* center align the text */
+
+}
+.form-container button:hover {
+  background-color: initial;
+  color: initial;
+}
+.medicine-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.add-button {
+  background: none;
+  border: none;
+  color:#14967f;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.remove-button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.medicine-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.medicine-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center; 
+  background-color: #14967f;
+  color: white;
+}
+.dosage-control {
+  display: flex;
+  align-items: center;
+}
+
+.dosage-control button {
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
+}
+
+.dosage-control span {
+  margin: 0 10px;
+}
+.form-control {
+  box-shadow: none;
+  margin-bottom: 10px;
+}
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group button {
+  background-color: #14967f;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.dosage-control {
+  display: flex;
+  align-items: center;
+}
+
+.dosage-control button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #ddd;
+  color: #333;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.dosage-control span {
+  margin: 0 10px;
+}
+
+.patients-list{
+  width :100%;
+}
+.patients-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+.patients-list li {
+  border-bottom: 1px solid #cccccc;
+  padding: 10px 0;
+}
+.patients-header{
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.patients-header div {
+  flex: 1;
+  text-align: center;
+}
+.patients-header span {
+  margin-right: 10px;
+}
+
+.prescriptions-list, .prescription-form {
+  width: 45%;
+}
+
+.prescriptions-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.prescriptions-list li {
+  margin-bottom: 20px;
+}
+
+.prescription-card {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.prescription-header {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-icon, .view-icon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+}
+.search-bar {
+  position: relative;
+  margin-bottom: 20px;
+}
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.search-bar::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+.button {
+  background-color: #14967f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e2fcd6; 
+  color:#095d7e/* Change to the color you want on hover */
+}
+a:hover {
+  text-decoration: none;
+}
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+.nav {
+  border-right: 1px solid #ddd;
+  padding-right: 10px;
+}
+h4 {
+  margin-bottom: 20px;
+}
+
+
+.nav-link {
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: #14967f!important;
+  color: white!important;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #14967f;
+}
+
+.mt-3 {
+  margin-top: 20px;
+}
+.placeholderStyle::placeholder {
+  color: #495057;
+  font-weight: 400;
+  font-size: 15px;
+}
+.signup-link:hover {
+  color: #14967f;
+}
+.filters-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+}
+
+.filter label {
+  margin-right: 8px;
+}
+.custom-datepicker {
+  width: 150px; /* Adjust the width as needed */
+}
+.expandable-div {
+  transition: transform 0.3s ease-in-out;
+  background-color: #095d7e;
+}
+
+.expandable-div:hover {
+  transform: scale(1.1);
+  background-color: #14967f;
+}
+.notification-item {
+  padding: 20px 20px;
+  border-bottom: 1px solid gray;
+  list-style-type: none;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+  list-style-type: none;
+}
+.notifications {
+  text-align: left;
+  padding:20px;
+  
+}
+.notifications h2{
+  text-align: left;
+  padding:20px;
+ font-weight: 600;
+ margin-left: 80px;
+}
+
+.notifications-box {
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 20px;
+}
+.message-text {
+  max-width: 70%; /* adjust as needed */
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+.date-text {
+  font-size: 0.8em; /* adjust as needed */
+  margin-left: 5px; /* adjust as needed */
+  color:gray;
+}
+.cancel-button {
+  border: 2px solid crimson;
+  color: crimson;
+  border-radius: 50px;
+  padding: 5px 15px;
+  background-color: transparent;
+  font-size: 0.8em;
+  margin-right: 10px;
+  margin-top: 10px;
+
+}
+.cancel-button:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.reschedule-button:hover {
+  background-color:#14967f;
+  color: white;
+}
+.reschedule-button {
+  border: 2px solid #14967f;
+  color:#14967f;
+  border-radius: 50px;
+  padding: 5px 15px;
+  background-color: transparent;
+  font-size: 0.8em;
+  margin-right: 10px;
+  margin-top: 10px;
+
+}
+.speciality-filter {
+  width: 100%; /* Adjust as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+
+}
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-bar select,
+.filter-bar input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+
+}
+
+.filter-bar .speciality-filter {
+  flex: 2; /* Make the speciality filter twice as wide as the date and time filters */
+  margin-right: 10px;
+}
+
+.filter-bar .date-filter,
+.filter-bar .time-filter {
+  flex: 1;
+}
