@@ -1,1 +1,3 @@
-# On-The-Run-Clinic
+This project is an integrated platform designed to improve the interaction between patients, doctors, and pharmacists, while streamlining healthcare management. This platform allows users to register as patients or doctors, upload health records, view appointments, and order medications. With integrated healthcare packages, appointment management, prescriptions, and payment systems, El7a2ny serves as a comprehensive virtual clinic and pharmacy solution.
+
+Built using the MERN Stack (MongoDB, Express.js, React.js, Node.js), the project provides a seamless experience for patients, doctors, and administrators. It allows for efficient management of appointments, prescriptions, health packages, and more.
